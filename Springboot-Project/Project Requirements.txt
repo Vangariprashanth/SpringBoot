@@ -1,0 +1,2 @@
+The website will have users who can buy an array of products in different quantities.
+It will hold the inventory of stock and allow users to make orders to ship to their address.
