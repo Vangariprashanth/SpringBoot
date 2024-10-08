@@ -1,7 +1,51 @@
-Details:
-Database: SQL Server
+# Wikimedia Real-Time Data Analysis
 
-Navigate to Kafka folder. In my case it is c:Kafka
+## Overview
+
+The **Wikimedia Real-Time Data Analysis** project aims to analyze user engagement and identify popular topics using real-time data streams from the Wikimedia API. The project leverages Kafka for message brokering, Spring Boot for microservices, and SQL Server for data persistence, enabling timely insights into user behavior and content engagement trends.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [How to Run the Project](#how-to-run-the-project)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **High-Performance Producer Microservice**: Ingests real-time data streams from the Wikimedia API for user engagement analysis.
+- **Resilient Consumer Microservice**: Processes hundreds of Kafka messages per minute and stores them in SQL Server for further analysis.
+- **Data Analysis**: Provides insights into user behavior and content engagement trends through stored data.
+
+## Technologies
+
+- **Apache Kafka**: For message brokering and real-time data processing.
+- **Spring Boot**: For building and deploying microservices.
+- **SQL Server**: For data storage and retrieval.
+- **Wikimedia API**: To fetch real-time data streams.
+
+## Getting Started
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+- Java 17 or later
+- Apache Kafka
+- SQL Server
+- Maven
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vangariprashanth/SpringBoot/tree/611e3f359efb0111ba265730d15e2c073acdddc3/Springboot-Kafka-Project
+
+2. Navigate to Kafka folder. In my case it is c:Kafka
+
 1. Start Zookeeper:
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
