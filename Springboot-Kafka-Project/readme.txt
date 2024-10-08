@@ -4,16 +4,6 @@
 
 The **Wikimedia Real-Time Data Analysis** project aims to analyze user engagement and identify popular topics using real-time data streams from the Wikimedia API. The project leverages Kafka for message brokering, Spring Boot for microservices, and SQL Server for data persistence, enabling timely insights into user behavior and content engagement trends.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
-- [How to Run the Project](#how-to-run-the-project)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - **High-Performance Producer Microservice**: Ingests real-time data streams from the Wikimedia API for user engagement analysis.
