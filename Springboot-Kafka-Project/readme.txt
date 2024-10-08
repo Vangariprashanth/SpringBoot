@@ -1,6 +1,4 @@
-Here's your README file without the markdown formatting (## and ***):
-
-# Wikimedia Real-Time Data Analysis
+ Wikimedia Real-Time Data Analysis
 
 Overview
 
@@ -33,26 +31,25 @@ Prerequisites
 Installation
 
 1. Clone the repository:
-   ```bash
+   
    git clone https://github.com/Vangariprashanth/SpringBoot/tree/611e3f359efb0111ba265730d15e2c073acdddc3/Springboot-Kafka-Project
-   ```
+   
 
 2. Navigate to Kafka folder. In my case it is c:Kafka
 
 3. Start Zookeeper:
-   ```bash
+   
    .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
-   ```
+   
 
 4. Start Kafka Broker: 
-   ```bash
+   
    .\bin\windows\kafka-server-start.bat .\config\server.properties
-   ```
+
 
 5. Create Kafka topic:
-   ```bash
    .\bin\windows\kafka-topics.bat --create --topic wikimedia_recentchange --bootstrap-server localhost:9092
-   ```
+
 
 6. Go to `springboot-kafka-project\kafka-producer-wikimedia\src\main\java\com\prashanthvangari\SpringBootProducerApplication.java`
 
@@ -60,8 +57,4 @@ Installation
 
 Extra:
 - Consumer:
-   ```bash
    .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic wikimedia_recentchange --from-beginning
-   ```
-
-Feel free to add or adjust any additional information or instructions to further clarify the setup or usage!
